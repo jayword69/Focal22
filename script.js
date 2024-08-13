@@ -52,4 +52,18 @@ document.addEventListener('DOMContentLoaded', function() {
         gallery.appendChild(galleryItem);
         observer.observe(galleryItem);
     });
+ // Inicializar el mapa
+    var map = L.map('mapa').setView([51.505, -0.09], 13); // Reemplaza con las coordenadas correctas
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([51.5, -0.09]).addTo(map) // Reemplaza con las coordenadas correctas
+        .bindPopup('Estudio Focal22')
+        .openPopup();
+
+});
+document.addEventListener('DOMContentLoaded', function() {
+    AOS.init();
+    // ... (resto de tu código JavaScript)
 });
