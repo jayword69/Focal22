@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         form.reset();
     });
 
+    
     const observerOptions = {
         root: null,
         rootMargin: '0px',
