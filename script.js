@@ -17,15 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
         form.reset();
     });
 
-    // Carga dinámica de imágenes en la galería con lazy loading
-    const gallery = document.querySelector('.gallery-grid');
-    const imageUrls = [
-        'gallery1.png',
-        'gallery2.png',
-        'gallery3.png',
-        // Agrega más URLs según sea necesario
-    ];
-
     const observerOptions = {
         root: null,
         rootMargin: '0px',
